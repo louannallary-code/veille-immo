@@ -1,0 +1,91 @@
+# ============================================================
+#  VEILLE IMMO — tes critères et la liste des sites surveillés
+#  C'est le seul fichier que tu auras à modifier.
+# ============================================================
+
+criteres:
+  loyer_max: 1000          # en €, charges comprises
+  surface_min: 25          # en m²
+  pieces_min: 2
+  meuble: non              # "non" = on ignore les annonces meublées
+  codes_postaux: ["75011"] # arrondissements acceptés
+
+# Pour chaque agence :
+#   nom : le nom affiché dans les notifications
+#   url : la page de résultats à surveiller.
+#         Le mieux : fais ta recherche sur le site avec tes filtres
+#         (location, Paris 11e, 2 pièces…) puis copie l'adresse de la page.
+#   motif (facultatif) : un morceau d'adresse que contiennent tous les
+#         liens d'annonces de ce site. Si absent, le script devine.
+#   actif : mettre "non" pour mettre une agence en pause.
+
+agences:
+  - nom: Laforêt
+    url: https://www.laforet.com/ville/location-appartement-paris-75011
+    motif: /louer/
+
+  - nom: Foncia
+    url: https://fr.foncia.com/location/paris-75011/appartement
+    motif: /location/paris-75011/appartement/
+
+  - nom: Orpi (Urban Success)
+    url: https://www.orpi.com/urbansuccess/louer/biens-en-location
+    motif: /annonce-location-
+
+  - nom: Orpi (Patrimonia)
+    url: https://www.orpi.com/immo75/louer/biens-en-location
+    motif: /annonce-location-
+
+  - nom: Orpi (Immo Conseils)
+    url: https://www.orpi.com/immoconseilsparis/louer/biens-en-location
+    motif: /annonce-location-
+
+  - nom: Orpi (Nouallet Paris 11)
+    url: https://www.orpi.com/noualletparis11/louer/biens-en-location
+    motif: /annonce-location-
+
+  - nom: Orpi (MCD)
+    url: https://www.orpi.com/mcd/louer/biens-en-location
+    motif: /annonce-location-
+
+  - nom: Orpi (Cabinet Deschamps)
+    url: https://www.orpi.com/cdp/louer/biens-en-location
+    motif: /annonce-location-
+
+  - nom: Century 21   # ⚠️ ADRESSE PROVISOIRE, à remplacer
+    url: https://www.century21.fr/annonces/f/location-appartement/v-paris-11e-arrondissement/
+
+  - nom: Stéphane Plaza Immobilier   # ⚠️ ADRESSE PROVISOIRE, à remplacer
+    url: https://www.stephaneplazaimmobilier.com/immobilier-acheter-louer?transaction=location&localisation=Paris%2011e
+
+  - nom: Citya   # ⚠️ ADRESSE PROVISOIRE, à remplacer
+    url: https://www.citya.com/annonces/location/appartement/paris-11e-75011
+
+  - nom: Guy Hoquet (Charonne Faidherbe)   # ⚠️ ADRESSE PROVISOIRE, à remplacer
+    url: https://paris-11-charonne-faidherbe.guy-hoquet.com/biens/result
+    motif: /biens/
+
+  - nom: Guy Hoquet (Voltaire)   # ⚠️ ADRESSE PROVISOIRE, à remplacer
+    url: https://paris-11-voltaire.guy-hoquet.com/biens/result
+    motif: /biens/
+
+  - nom: Oralia   # ⚠️ ADRESSE PROVISOIRE, à remplacer
+    url: https://www.oralia.fr/
+
+  - nom: Lamirand & Associés   # ⚠️ ADRESSE PROVISOIRE, à remplacer
+    url: https://www.lamirand-associes.com/
+
+  - nom: Fredelion   # ⚠️ ADRESSE PROVISOIRE, à remplacer
+    url: https://www.fredelion.com/
+
+  - nom: Cabinet Poillot   # ⚠️ ADRESSE PROVISOIRE, à remplacer
+    url: https://lecabinetpoillot.fr/
+
+  - nom: Bonduelle Immobilier   # ⚠️ ADRESSE PROVISOIRE, à remplacer
+    url: https://www.bonduelleimmobilier.com/
+
+  - nom: Richardière   # ⚠️ ADRESSE PROVISOIRE, à remplacer
+    url: https://www.richardiere.fr/
+
+  - nom: 18e Avenue   # ⚠️ ADRESSE PROVISOIRE, à remplacer
+    url: https://www.18avenue.fr/
