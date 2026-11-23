@@ -2,7 +2,9 @@ name: Veille immo
 
 on:
   schedule:
-    - cron: "*/5 * * * *"      # toutes les 5 minutes (au mieux)
+    # Toutes les 10 minutes. Les heures ici sont en heure UTC (pas celle de Paris),
+    # c'est l'étape "Vérifier l'heure" plus bas qui limite à 8h-19h heure de Paris.
+    - cron: "*/10 5-18 * * *"
   workflow_dispatch:            # bouton "Run workflow" pour lancer à la main
     inputs:
       test:
@@ -22,20 +24,38 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
+      # ---- Horaires de la veille (heure de Paris, été comme hiver) ----
+      - name: Vérifier l'heure
+        run: |
+          HEURE_DEBUT=8
+          HEURE_FIN=19
+          H=$(TZ=Europe/Paris date +%-H)
+          echo "Il est ${H}h à Paris."
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || { [ "$H" -ge "$HEURE_DEBUT" ] && [ "$H" -lt "$HEURE_FIN" ]; }; then
+            echo "DANS_HORAIRES=oui" >> "$GITHUB_ENV"
+          else
+            echo "Hors horaires : la veille se repose."
+            echo "DANS_HORAIRES=non" >> "$GITHUB_ENV"
+          fi
+
       - uses: actions/checkout@v4
+        if: env.DANS_HORAIRES == 'oui'
 
       - uses: actions/setup-python@v5
+        if: env.DANS_HORAIRES == 'oui'
         with:
           python-version: "3.12"
           cache: pip
           cache-dependency-path: .github/workflows/veille.yml
 
       - name: Installer les outils
+        if: env.DANS_HORAIRES == 'oui'
         run: |
           pip install playwright pyyaml requests
           python -m playwright install --with-deps chromium
 
       - name: Lancer la veille
+        if: env.DANS_HORAIRES == 'oui'
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: |
@@ -46,6 +66,7 @@ jobs:
           fi
 
       - name: Enregistrer les annonces déjà vues
+        if: env.DANS_HORAIRES == 'oui'
         run: |
           git config user.name "veille-bot"
           git config user.email "veille-bot@users.noreply.github.com"
