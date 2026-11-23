@@ -170,12 +170,16 @@ def meme_site(url, base):
 def est_annonce(href, texte, base, motif):
     if not href.startswith("http") or not meme_site(href, base):
         return False
-    chemin = urlparse(href).path
+    u = urlparse(href)
+    chemin = u.path
+    chemin_et_params = chemin + "?" + u.query
     if motif:
-        return motif in href and bool(IDENTIFIANT.search(chemin))
+        return motif in href and bool(IDENTIFIANT.search(chemin_et_params))
+    if chemin.rstrip("/") == urlparse(base).path.rstrip("/"):
+        return False  # autre page de la même recherche (tri, page 2…)
     if EXCLUSIONS.search(chemin):
         return False
-    if not IDENTIFIANT.search(chemin):
+    if not IDENTIFIANT.search(chemin_et_params):
         return False
     return bool(re.search(r"€|eur", texte, re.I))
 
@@ -272,6 +276,7 @@ def main():
     vues = charger(FICHIER_VUES, {})
     sante = charger(FICHIER_SANTE, {})
     lignes_rapport = []
+    dans_criteres = []  # annonces actuellement en ligne qui correspondent
     nb_nouvelles = 0
 
     with sync_playwright() as p:
@@ -319,15 +324,16 @@ def main():
                 for url, lien in annonces.items():
                     infos = extraire_infos(lien["texte"] + " " + lien["titre"], url)
                     ok, _ = correspond(infos, crit)
+                    titre = (lien["titre"] or "Annonce").strip().split("\n")[0][:80] or "Annonce"
                     if ok:
                         gardees += 1
+                        dans_criteres.append((nom, url, infos, titre))
                     if url in deja_vues:
                         continue
                     deja_vues.add(url)
                     if premiere_fois or not ok:
                         continue  # 1er passage : on mémorise sans notifier
                     nb_nouvelles += 1
-                    titre = (lien["titre"] or "Nouvelle annonce").strip().split("\n")[0][:80]
                     notifier(f"🏠 {nom} : {resume_infos(infos)}", titre, url, priorite=5,
                              tags=["house"])
                 statut += f", dont {gardees} dans tes critères"
@@ -340,9 +346,13 @@ def main():
 
     FICHIER_VUES.write_text(json.dumps(vues, ensure_ascii=False, indent=1), encoding="utf-8")
     FICHIER_SANTE.write_text(json.dumps(sante, ensure_ascii=False, indent=1), encoding="utf-8")
-    ecrire_rapport(lignes_rapport, crit)
+    ecrire_rapport(lignes_rapport, crit, dans_criteres)
 
     if mode_test:
+        # En test : on envoie aussi les annonces déjà en ligne qui collent aux critères
+        for nom, url, infos, titre in dans_criteres[:10]:
+            notifier(f"📋 Déjà en ligne · {nom} : {resume_infos(infos)}", titre, url,
+                     priorite=3, tags=["clipboard"])
         ok = sum(1 for l in lignes_rapport if l[2].startswith("✅"))
         detail = "\n".join(f"{l[2][:2]} {l[0]}" for l in lignes_rapport)
         notifier(f"🧪 Test : {ok}/{len(lignes_rapport)} sites lus correctement", detail,
@@ -350,7 +360,7 @@ def main():
     print(f"Terminé : {nb_nouvelles} nouvelle(s) annonce(s) notifiée(s).")
 
 
-def ecrire_rapport(lignes, crit):
+def ecrire_rapport(lignes, crit, dans_criteres):
     heure = datetime.now().strftime("%d/%m/%Y")
     txt = [
         "# Rapport de la veille immo",
@@ -364,6 +374,9 @@ def ecrire_rapport(lignes, crit):
     ]
     for nom, url, statut, duree, titre_page, _ in lignes:
         txt.append(f"| [{nom}]({url}) | {statut} | {titre_page[:60].replace('|', '/')} |")
+    txt += ["", f"## Annonces en ligne qui correspondent à tes critères ({len(dans_criteres)})", ""]
+    txt += [f"- [{n} · {resume_infos(i)} · {t.replace('[', '(').replace(']', ')')}]({u})"
+            for n, u, i, t in dans_criteres] or ["- (aucune pour l'instant)"]
     txt += ["", "## Exemples de liens repérés (pour vérifier que ce sont bien des annonces)", ""]
     for nom, _, _, _, _, exemples in lignes:
         txt.append(f"**{nom}**")
