@@ -21,10 +21,10 @@ Mis à jour le 23/11/2026.
 | [Oralia](https://www.oralia.fr/) | ✅ 10 annonce(s) repérée(s), dont 6 dans tes critères | Oralia : Agences immobilières - Achat, Location, Gestion Loc |
 | [Lamirand & Associés](https://www.lamirand-associes.com/) | ⚠️ aucune annonce repérée | Lamirand & Associés - l'immobilier à Paris Rive droite / Lam |
 | [Fredelion](https://www.fredelion.com/) | ✅ 4 annonce(s) repérée(s), dont 2 dans tes critères | Acheter une maison ou un appartement avec Fredelion - Immobi |
-| [Cabinet Poillot](https://lecabinetpoillot.fr/) | ✅ 11 annonce(s) repérée(s), dont 5 dans tes critères | Votre agence immobilière à vincennes |
+| [Cabinet Poillot](https://lecabinetpoillot.fr/) | ✅ 11 annonce(s) repérée(s), dont 4 dans tes critères | Votre agence immobilière à vincennes |
 | [Bonduelle Immobilier](https://www.bonduelleimmobilier.com/) | ✅ 12 annonce(s) repérée(s), dont 3 dans tes critères | Bonduelle immobilier |
 | [Richardière](https://www.richardiere.fr/) | ❌ Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.richardiere.fr/ |  |
-| [18e Avenue](https://www.18avenue.fr/) | ❌ Page.goto: Timeout 45000ms exceeded. |  |
+| [18e Avenue](https://www.18avenue.fr/) | ⚠️ aucune annonce repérée | L'agence immobilière du 18ème depuis 1988 |
 
 ## Exemples de liens repérés (pour vérifier que ce sont bien des annonces)
 
@@ -92,9 +92,9 @@ Mis à jour le 23/11/2026.
 - https://www.fredelion.com/fr/immobilier/vente/appartement/boulogne-billancourt/boulogne-billancourt-trapeze/95792
 
 **Cabinet Poillot**
-- https://www.lecabinetpoillot.fr/immobilier/appartement-t2-paris-location-fr_LA8115.htm
-- https://www.lecabinetpoillot.fr/immobilier/appartement-t2-paris-vente-fr_VA3534.htm
-- https://www.lecabinetpoillot.fr/immobilier/appartement-t3-montreuil-location-fr_LA8113.htm
+- https://www.lecabinetpoillot.fr/immobilier/appartement-studio-vincennes-vente-fr_VA8082.htm
+- https://www.lecabinetpoillot.fr/immobilier/appartement-t2-paris-vente-fr_VA3596.htm
+- https://www.lecabinetpoillot.fr/immobilier/appartement-t3-4-paris-vente-fr_VA8093.htm
 
 **Bonduelle Immobilier**
 - https://bonduelleimmobilier.com/fr/propriete/vente+appartement+saint-germain-en-laye+saint-germain-en-laye-joli-triplex-centre-ville+87405521
