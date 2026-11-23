@@ -19,7 +19,7 @@ criteres:
 agences:
   - nom: Orpi
     url: https://www.orpi.com/recherche?transactions%5B0%5D=rent&resultUrl=&realEstateTypes%5B0%5D=maison&realEstateTypes%5B1%5D=appartement&locations%5B0%5D%5Bvalue%5D=paris-11&locations%5B0%5D%5Blabel%5D=Paris%2011%20%2875011%29%20-%20Ville&locations%5B0%5D%5Blatitude%5D=48.86&locations%5B0%5D%5Blongitude%5D=2.38126&agency=&numbersOfRooms%5B0%5D=2&newBuild=&oldBuild=&lifeAnnuity=&maxPrice=1000&sort=date-down&layoutType=list&page=1&recentlySold=false&searchRange=
-    motif: /annonce-location-
+    motif: /annonce-location-appartement-
 
   - nom: Century 21
     url: https://www.century21.fr/annonces/f/location-maison-appartement/cp-75011/s-0-/st-0-/b-0-1000/p-2/
@@ -44,12 +44,6 @@ agences:
 
   - nom: Fredelion
     url: https://www.fredelion.com/fr/immobilier/location/appartement?anchor=property-list&zipcode=75011&price-max=1000&surface_area-min=25&rooms-min=2#property-list
-
-  - nom: Cabinet Poillot
-    url: https://www.lecabinetpoillot.fr/recherche?a=2&b%5B%5D=appt&c=Paris+75011%2C+&radius=0&d=0&e=1000&f=25&x=illimité&m%5B%5D=2&do_search=Rechercher
-
-  - nom: Bonduelle Immobilier
-    url: https://bonduelleimmobilier.com/fr/recherche
 
   - nom: Laforêt
     url: https://www.laforet.com/ville/location-appartement-paris-75011
