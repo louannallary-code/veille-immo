@@ -1,0 +1,82 @@
+{
+ "Laforêt": {
+  "echecs": 0,
+  "alerte_envoyee": false
+ },
+ "Foncia": {
+  "echecs": 1,
+  "alerte_envoyee": false
+ },
+ "Orpi (Urban Success)": {
+  "echecs": 0,
+  "alerte_envoyee": false
+ },
+ "Orpi (Patrimonia)": {
+  "echecs": 0,
+  "alerte_envoyee": false
+ },
+ "Orpi (Immo Conseils)": {
+  "echecs": 1,
+  "alerte_envoyee": false
+ },
+ "Orpi (Nouallet Paris 11)": {
+  "echecs": 0,
+  "alerte_envoyee": false
+ },
+ "Orpi (MCD)": {
+  "echecs": 0,
+  "alerte_envoyee": false
+ },
+ "Orpi (Cabinet Deschamps)": {
+  "echecs": 1,
+  "alerte_envoyee": false
+ },
+ "Century 21": {
+  "echecs": 1,
+  "alerte_envoyee": false
+ },
+ "Stéphane Plaza Immobilier": {
+  "echecs": 1,
+  "alerte_envoyee": false
+ },
+ "Citya": {
+  "echecs": 0,
+  "alerte_envoyee": false
+ },
+ "Guy Hoquet (Charonne Faidherbe)": {
+  "echecs": 1,
+  "alerte_envoyee": false
+ },
+ "Guy Hoquet (Voltaire)": {
+  "echecs": 1,
+  "alerte_envoyee": false
+ },
+ "Oralia": {
+  "echecs": 0,
+  "alerte_envoyee": false
+ },
+ "Lamirand & Associés": {
+  "echecs": 1,
+  "alerte_envoyee": false
+ },
+ "Fredelion": {
+  "echecs": 0,
+  "alerte_envoyee": false
+ },
+ "Cabinet Poillot": {
+  "echecs": 0,
+  "alerte_envoyee": false
+ },
+ "Bonduelle Immobilier": {
+  "echecs": 0,
+  "alerte_envoyee": false
+ },
+ "Richardière": {
+  "echecs": 1,
+  "alerte_envoyee": false
+ },
+ "18e Avenue": {
+  "echecs": 1,
+  "alerte_envoyee": false
+ }
+}
