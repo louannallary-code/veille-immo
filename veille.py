@@ -61,7 +61,22 @@ def _nombre(txt):
 def extraire_infos(texte, url=""):
     """Devine loyer, surface, pièces, meublé et code postal. None = inconnu."""
     t = " ".join(texte.split())
-    infos = {"loyer": None, "surface": None, "pieces": None, "meuble": None, "cp": None}
+    infos = {"loyer": None, "surface": None, "pieces": None, "meuble": None, "cp": None,
+             "vente": False, "pas_logement": False}
+    entete = (url + " " + t[:200]).lower()
+
+    # Vente plutôt que location ? (gros montant ou mots explicites)
+    for m in re.finditer(r"(?<![\w.,])(\d{1,3}(?:[ .]\d{3})+|\d{5,})\s*(?:€|eur)", t, re.I):
+        v = _nombre(m.group(1).replace(".", "").replace(" ", ""))
+        if v and v >= 30000:
+            infos["vente"] = True
+    if re.search(r"\bvente\b|à vendre|a-vendre|/vente|/acheter|achat-", entete):
+        infos["vente"] = True
+
+    # Parking, cave, bureau… plutôt qu'un logement ?
+    if (re.search(r"stationnement|parking|garage|\bbox\b|\bcave\b|local[- ]commercial|bureaux?\b|commerce|terrain", entete)
+            and not re.search(r"appartement|pi[eè]ces?|studio|\bt\d\b|duplex|loft", entete)):
+        infos["pas_logement"] = True
 
     # Loyer : premier montant en € plausible pour un loyer
     montant = r"(?<![\w.,])(\d{1,3}(?:[  \xa0.]\d{3})+|\d+)((?:[.,]\d{1,2})?)\s*(?:€|eur\b|euros?)"
@@ -98,7 +113,7 @@ def extraire_infos(texte, url=""):
         infos["meuble"] = True
 
     # Code postal / arrondissement
-    m = re.search(r"\b(75\d{3}|751\d{2})\b", t + " " + url)
+    m = re.search(r"(?<!\d)((?:75|77|78|91|92|93|94|95)\d{3})(?!\d)", t + " " + url)
     if m:
         cp = m.group(1)
         if cp.startswith("751"):  # codes INSEE type 75111 -> 75011
@@ -112,7 +127,13 @@ def extraire_infos(texte, url=""):
 
 
 def correspond(infos, crit):
-    """Renvoie (True/False, raison). Une info inconnue ne bloque jamais."""
+    """Renvoie (True/False, raison)."""
+    if infos["vente"]:
+        return False, "vente"
+    if infos["pas_logement"]:
+        return False, "pas un logement"
+    if infos["loyer"] is None or (infos["surface"] is None and infos["pieces"] is None):
+        return False, "ne ressemble pas à une annonce"
     if infos["loyer"] is not None and infos["loyer"] > crit["loyer_max"]:
         return False, f"loyer {infos['loyer']:.0f} €"
     if infos["surface"] is not None and infos["surface"] < crit["surface_min"]:
