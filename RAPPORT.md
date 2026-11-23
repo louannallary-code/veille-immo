@@ -13,7 +13,7 @@ Mis à jour le 23/11/2026.
 | [Oralia](https://oralia.fr/nos-annonces?type=rental&locations=PARIS+-+75011&max_budget=1000&area_min=25&propertyType%5B%5D=apartment&from=search) | ⚠️ aucune annonce repérée | Nos annonces - Oralia |
 | [Lamirand (Parisloc)](https://www.parisloc.com/pl_liste.pl?ACTION=CONSULTER&FROM=ACCUEIL&PAR_PAGE=10&PAR_PAGE3=selected&ISMOBILE=non&ISMOBILE_OU_TABLETTE=non&AVAL=location&localisation=75011&localisationTitle=75011&localisationDatastate=75011---75011&TYPE_BIEN=appartement&NB_PIECE=2+p&PRIX=2&PRIX_MIN=750&PRIX_MAX=1350&SURFACE_MIN=&SURFACE_MAX=&submit=Rechercher) | ⚠️ aucune annonce repérée | Annonces Location |
 | [Fredelion](https://www.fredelion.com/fr/immobilier/location/appartement?anchor=property-list&zipcode=75011&price-max=1000&surface_area-min=25&rooms-min=2#property-list) | ⚠️ aucune annonce repérée | Louer un appartement Paris 11ème avec Fredelion |
-| [Laforêt](https://www.laforet.com/ville/location-appartement-paris-75011) | ✅ 43 annonce(s) repérée(s), dont 0 dans tes critères | Appartements à louer à Paris 11 (75011) - 3 annonces ⇔ Lafor |
+| [Laforêt](https://www.laforet.com/ville/location-appartement-paris-75011) | ✅ 44 annonce(s) repérée(s), dont 0 dans tes critères | Appartements à louer à Paris 11 (75011) - 4 annonces ⇔ Lafor |
 | [Citya](https://www.citya.com/annonces/location/appartement/paris-11e-75011) | ✅ 24 annonce(s) repérée(s), dont 15 dans tes critères | Location immobilière appartement : Découvrez nos offres avec |
 
 ## Annonces en ligne qui correspondent à tes critères (15)

@@ -4,7 +4,7 @@
   "alerte_envoyee": false
  },
  "Foncia": {
-  "echecs": 4,
+  "echecs": 5,
   "alerte_envoyee": false
  },
  "Orpi (Urban Success)": {
@@ -36,7 +36,7 @@
   "alerte_envoyee": false
  },
  "Stéphane Plaza Immobilier": {
-  "echecs": 4,
+  "echecs": 5,
   "alerte_envoyee": false
  },
  "Citya": {
@@ -52,7 +52,7 @@
   "alerte_envoyee": false
  },
  "Oralia": {
-  "echecs": 2,
+  "echecs": 3,
   "alerte_envoyee": false
  },
  "Lamirand & Associés": {
@@ -60,7 +60,7 @@
   "alerte_envoyee": false
  },
  "Fredelion": {
-  "echecs": 2,
+  "echecs": 3,
   "alerte_envoyee": false
  },
  "Cabinet Poillot": {
@@ -84,11 +84,11 @@
   "alerte_envoyee": false
  },
  "Guy Hoquet": {
-  "echecs": 2,
+  "echecs": 3,
   "alerte_envoyee": false
  },
  "Lamirand (Parisloc)": {
-  "echecs": 2,
+  "echecs": 3,
   "alerte_envoyee": false
  }
 }
