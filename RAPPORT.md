@@ -13,7 +13,7 @@ Mis à jour le 26/11/2026.
 | [Oralia](https://oralia.fr/nos-annonces?type=rental&locations=PARIS+-+75011&max_budget=1000&area_min=25&propertyType%5B%5D=apartment&from=search) | ⚠️ aucune annonce repérée | Nos annonces - Oralia |
 | [Lamirand (Parisloc)](https://www.parisloc.com/pl_liste.pl?ACTION=CONSULTER&FROM=ACCUEIL&PAR_PAGE=10&PAR_PAGE3=selected&ISMOBILE=non&ISMOBILE_OU_TABLETTE=non&AVAL=location&localisation=75011&localisationTitle=75011&localisationDatastate=75011---75011&TYPE_BIEN=appartement&NB_PIECE=2+p&PRIX=2&PRIX_MIN=750&PRIX_MAX=1350&SURFACE_MIN=&SURFACE_MAX=&submit=Rechercher) | ⚠️ aucune annonce repérée | Annonces Location |
 | [Fredelion](https://www.fredelion.com/fr/immobilier/location/appartement?anchor=property-list&zipcode=75011&price-max=1000&surface_area-min=25&rooms-min=2#property-list) | ⚠️ aucune annonce repérée | Louer un appartement Paris 11ème avec Fredelion |
-| [Laforêt](https://www.laforet.com/ville/location-appartement-paris-75011) | ✅ 43 annonce(s) repérée(s), dont 0 dans tes critères | Appartements à louer à Paris 11 (75011) - 3 annonces ⇔ Lafor |
+| [Laforêt](https://www.laforet.com/ville/location-appartement-paris-75011) | ✅ 45 annonce(s) repérée(s), dont 0 dans tes critères | Appartements à louer à Paris 11 (75011) - 5 annonces ⇔ Lafor |
 | [Citya](https://www.citya.com/annonces/location/appartement/paris-11e-75011) | ✅ 24 annonce(s) repérée(s), dont 13 dans tes critères | Location immobilière appartement : Découvrez nos offres avec |
 
 ## Annonces en ligne qui correspondent à tes critères (13)
@@ -63,7 +63,7 @@ Mis à jour le 26/11/2026.
 **Laforêt**
 - https://www.laforet.com/agence-immobiliere/paris11parmentier/louer/paris-11/appartement-2-pieces-53020413
 - https://www.laforet.com/agence-immobiliere/paris11parmentier/louer/paris-11/appartement-3-pieces-52991703
-- https://www.laforet.com/agence-immobiliere/paris11parmentier/louer/paris/appartement-2-pieces-21110955
+- https://www.laforet.com/agence-immobiliere/paris11parmentier/louer/paris/appartement-1-piece-22451954
 
 **Citya**
 - https://www.citya.com/annonces/location/appartement/aire-sur-la-lys-62120/1054184
