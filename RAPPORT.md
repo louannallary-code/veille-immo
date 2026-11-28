@@ -40,7 +40,7 @@ Mis à jour le 28/11/2026.
 
 **Century 21**
 - https://www.century21.fr/projet-immobilier?localisation=39290&filtre=rent&budget=0,1000&type=maison,appartement&pieces=2
-- https://www.century21.fr/edito/article/etudiante-trouver-le-logement-de-votre-rentree-2023-en-3
+- https://www.century21.fr/edito/article/location-appartement-quelles-regles-pour-louer-en-2025
 
 **Stéphane Plaza Immobilier**
 - (aucun)
