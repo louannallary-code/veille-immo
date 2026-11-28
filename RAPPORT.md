@@ -1,7 +1,7 @@
 # Rapport de la veille immo
 
 Critères : 1000 € max · 25 m² min · 2 pièces min · meublé : non · 75011
-Mis à jour le 27/11/2026.
+Mis à jour le 28/11/2026.
 
 | Agence | État | Titre de la page lue |
 |---|---|---|
@@ -9,7 +9,7 @@ Mis à jour le 27/11/2026.
 | [Century 21](https://www.century21.fr/annonces/f/location-maison-appartement/cp-75011/s-0-/st-0-/b-0-1000/p-2/) | ✅ 1 annonce(s) repérée(s), dont 0 dans tes critères | Location maison appartement à Paris 11 (75) 2 pièce(s) - 100 |
 | [Stéphane Plaza Immobilier](https://www.stephaneplazaimmobilier.com/louer/arrondissement/paris-11e-arrondissement_75111/appartement/pieces_2/?price_max=1000) | ⚠️ aucune annonce repérée | Un instant… |
 | [Foncia](https://fr.foncia.com/location/paris-75011/appartement?nbPiece=2--&prix=--1000&advanced=) | ⚠️ aucune annonce repérée | 403 Forbidden |
-| [Guy Hoquet](https://www.guy-hoquet.com/biens/result#1&p=1&f10=2&f20=paris-11e-75011_c3&f30=appartement&f40=1000&f70=2) | ⚠️ aucune annonce repérée | Annonces immobilières de biens à vendre et à louer |
+| [Guy Hoquet](https://www.guy-hoquet.com/biens/result#1&p=1&f10=2&f20=paris-11e-75011_c3&f30=appartement&f40=1000&f70=2) | ⚠️ aucune annonce repérée |  |
 | [Oralia](https://oralia.fr/nos-annonces?type=rental&locations=PARIS+-+75011&max_budget=1000&area_min=25&propertyType%5B%5D=apartment&from=search) | ⚠️ aucune annonce repérée | Nos annonces - Oralia |
 | [Lamirand (Parisloc)](https://www.parisloc.com/pl_liste.pl?ACTION=CONSULTER&FROM=ACCUEIL&PAR_PAGE=10&PAR_PAGE3=selected&ISMOBILE=non&ISMOBILE_OU_TABLETTE=non&AVAL=location&localisation=75011&localisationTitle=75011&localisationDatastate=75011---75011&TYPE_BIEN=appartement&NB_PIECE=2+p&PRIX=2&PRIX_MIN=750&PRIX_MAX=1350&SURFACE_MIN=&SURFACE_MAX=&submit=Rechercher) | ⚠️ aucune annonce repérée | Annonces Location |
 | [Fredelion](https://www.fredelion.com/fr/immobilier/location/appartement?anchor=property-list&zipcode=75011&price-max=1000&surface_area-min=25&rooms-min=2#property-list) | ⚠️ aucune annonce repérée | Louer un appartement Paris 11ème avec Fredelion |
@@ -21,7 +21,6 @@ Mis à jour le 27/11/2026.
 - [Citya · 484 € · 51.4 m² · 2 p. · Location Appartement 2 pièces 51.4m² à Aire-sur-la-Lys](https://www.citya.com/annonces/location/appartement/aire-sur-la-lys-62120/1105463)
 - [Citya · 516 € · 67.14 m² · 2 p. · Location Appartement 2 pièces 67.14m² à Aire-sur-la-Lys](https://www.citya.com/annonces/location/appartement/aire-sur-la-lys-62120/1123894)
 - [Citya · 599 € · 53.02 m² · 3 p. · Location Appartement 3 pièces 53.02m² à Aniche](https://www.citya.com/annonces/location/appartement/aniche-59580/1098180)
-- [Citya · 650 € · 45.42 m² · 2 p. · Location Appartement 2 pièces 45.42m² à Annay](https://www.citya.com/annonces/location/appartement/annay-62880/1110069)
 - [Citya · 650 € · 40.92 m² · 2 p. · Location Appartement 2 pièces 40.92m² à Annœullin](https://www.citya.com/annonces/location/appartement/annoeullin-59112/1129216)
 - [Citya · 660 € · 55.65 m² · 2 p. · Location Appartement 2 pièces 55.65m² à Anzin](https://www.citya.com/annonces/location/appartement/anzin-59410/1030462)
 - [Citya · 695 € · 64.8 m² · 3 p. · Location Appartement 3 pièces 64.8m² à Armentières](https://www.citya.com/annonces/location/appartement/armentieres-59280/1030649)
@@ -30,6 +29,7 @@ Mis à jour le 27/11/2026.
 - [Citya · 680 € · 47.18 m² · 2 p. · Location Appartement 2 pièces 47.18m² à Bailleul](https://www.citya.com/annonces/location/appartement/bailleul-59270/1091575)
 - [Citya · 395 € · 43.47 m² · 2 p. · Location Appartement 2 pièces 43.47m² à Beauvois-en-Cambrésis](https://www.citya.com/annonces/location/appartement/beauvois-en-cambresis-59157/421048)
 - [Citya · 840 € · 73.29 m² · 3 p. · Location Appartement 3 pièces 73.29m² à Berck](https://www.citya.com/annonces/location/appartement/berck-62600/1073114)
+- [Citya · 615 € · 42.33 m² · 2 p. · Location Appartement 2 pièces 42.33m² à Berck](https://www.citya.com/annonces/location/appartement/berck-62600/1135906)
 - [Citya · 695 € · 54.8 m² · 3 p. · Location Appartement 3 pièces 54.8m² à Boulogne-sur-Mer](https://www.citya.com/annonces/location/appartement/boulogne-sur-mer-62200/1079237)
 
 ## Exemples de liens repérés (pour vérifier que ce sont bien des annonces)
